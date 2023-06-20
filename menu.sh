@@ -10,9 +10,7 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 NC='\033[0;37m'
 clear
-MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl https://raw.githubusercontent.com/vpn-rjalil68/ip/main/access | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
+echo -e ""
 # DNS Patch
 tipeos2=$(uname -m)
 # OS Uptime
