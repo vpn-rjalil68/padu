@@ -6,7 +6,6 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$( curl https://raw.githubusercontent.com/vpn-rjalil68/ip/main/access | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
-else
 echo -e "${green}Tahniah! Anda Dibenarkan menggunakan Script VPN-BUDAKGERIK...${NC}"
 exit 0
 fi
